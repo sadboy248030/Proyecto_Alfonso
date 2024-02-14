@@ -13,7 +13,25 @@ Commitizen es una herramienta para estandarizar los mensajes de confirmación. S
     ```bash
     npm install -g commitizen
     ```
+## Configurar el archivo .czrc
 
+El archivo `.czrc` se utiliza para personalizar el adaptador convencional de Commitizen. Sigue estos pasos para configurarlo:
+
+1. Crea un archivo llamado `.czrc` en el directorio raíz de tu proyecto o en tu directorio de usuario.
+
+2. Dentro de `.czrc`, agrega la siguiente línea para configurar Commitizen para utilizar el adaptador convencional de Commitizen:
+
+    ```json
+    {
+      "path": "cz-conventional-changelog"
+    }
+    ```
+
+   Esto le dice a Commitizen que utilice el adaptador convencional de Commitizen para generar mensajes de confirmación.
+
+   Si estás utilizando Node.js instalado desde el sitio web oficial o mediante el administrador de versiones Node Version Manager (NVM) en Windows, la ruta donde se guarda normalmente Node.js y npm es `C:\Program Files\nodejs\node_modules\npm`.
+
+Con estos pasos, el archivo `.czrc` debería estar configurado correctamente en tu sistema.
 ## Configuración de Commitizen en Español
 
 Para configurar Commitizen para que utilice el idioma español cuando ejecutes `git cz`, sigue estos pasos:
@@ -37,46 +55,60 @@ Para configurar Commitizen para que utilice el idioma español cuando ejecutes `
    Esto le dice a Commitizen que utilice el adaptador convencional de Commitizen en español para generar mensajes de confirmación.
 
 Con estos pasos, deberías tener Commitizen instalado y configurado correctamente en tu sistema para utilizarlo en español cuando ejecutes `git cz`.
-## Agregar la ruta de instalación de npm a la variable de entorno PATH
+## Guía para Configurar Git Bash en IntelliJ IDEA
 
-Es posible que necesites agregar la ruta de instalación de npm a la variable de entorno PATH para que Git Bash pueda encontrar los comandos instalados globalmente. Sigue estos pasos:
+Esta guía te mostrará cómo configurar Git Bash en IntelliJ IDEA para que puedas ejecutar comandos de Git y npm directamente desde el entorno de desarrollo integrado (IDE).
+
+### Paso 1: Abre la Configuración
+
+1. Abre IntelliJ IDEA.
+
+2. Haz clic en "File" en la barra de menú y selecciona "Settings" (o "Preferences" en macOS).
+
+### Paso 2: Navega a la Configuración de Terminal
+
+1. En la ventana de configuración, navega hasta "Tools" y luego selecciona "Terminal".
+
+### Paso 3: Configura Git Bash como Terminal Personalizado
+
+1. En la sección "Shell path" (Ruta del shell), asegúrate de que esté seleccionada la opción "Use custom shell" (Usar shell personalizado).
+
+2. En el campo de texto debajo de "Shell path", ingresa la ruta de tu instalación de Git Bash. Por lo general, esta ruta es `C:\Program Files\Git\bin\bash.exe` en sistemas Windows.
+
+### Paso 4: Agrega la Ruta de Instalación de npm a la Variable de Entorno PATH
 
 1. Encuentra la ruta de instalación de npm. Por lo general, está dentro del directorio de instalación de Node.js. Por ejemplo, `C:\Program Files\nodejs\node_modules\npm`.
 
 2. Abre la configuración de variables de entorno en tu sistema:
-    - Haz clic derecho en "Este equipo" o "Mi PC" y selecciona "Propiedades".
-    - Haz clic en "Configuración avanzada del sistema".
-    - Haz clic en el botón "Variables de entorno".
+   - Haz clic derecho en "Este equipo" o "Mi PC" y selecciona "Propiedades".
+   - Haz clic en "Configuración avanzada del sistema".
+   - Haz clic en el botón "Variables de entorno".
 
 3. En la sección "Variables del sistema" (o "Variables de usuario"), encuentra la variable de entorno llamada "Path" o "PATH" y selecciónala.
 
 4. Haz clic en el botón "Editar" para modificar la variable de entorno PATH.
 
-5. Haz clic en "Nuevo" y pega la ruta de instalación de npm que encontraste anteriormente. Por ejemplo, `C:\Program Files\nodejs\node_modules\npm`.
+5. Haz clic en "Nuevo" y pega la ruta de instalación de npm que encontraste anteriormente. Te saldra name:`npm`
+value:`C:\Program Files\nodejs\node_modules\npm`.
 
-6. Guarda los cambios y cierra todas las ventanas.
 
-7. Reinicia Git Bash para que los cambios surtan efecto.
 
-## Configurar el archivo .czrc
+### Paso 5: Opcionalmente, Configura Ajustes Adicionales
 
-El archivo `.czrc` se utiliza para personalizar el adaptador convencional de Commitizen. Sigue estos pasos para configurarlo:
+1. Puedes configurar otros ajustes según tus preferencias, como el directorio de trabajo inicial y las opciones de inicio.
 
-1. Crea un archivo llamado `.czrc` en el directorio raíz de tu proyecto o en tu directorio de usuario.
+### Paso 6: Guarda los Cambios
 
-2. Dentro de `.czrc`, agrega la siguiente línea para configurar Commitizen para utilizar el adaptador convencional de Commitizen:
+1. Haz clic en "Apply" y despues  "OK" para cerrar la ventana de configuración y guardar los cambios.
 
-    ```json
-    {
-      "path": "cz-conventional-changelog"
-    }
-    ```
+### Paso 7: Reinicia IntelliJ IDEA
 
-   Esto le dice a Commitizen que utilice el adaptador convencional de Commitizen para generar mensajes de confirmación.
+1. Reinicia IntelliJ IDEA para que los cambios surtan efecto.
 
-   Si estás utilizando Node.js instalado desde el sitio web oficial o mediante el administrador de versiones Node Version Manager (NVM) en Windows, la ruta donde se guarda normalmente Node.js y npm es `C:\Program Files\nodejs\node_modules\npm`.
+Con estos pasos, Git Bash estará configurado como el terminal en IntelliJ IDEA y podrás ejecutar comandos de Git y npm directamente desde la terminal integrada en el IDE.
 
-Con estos pasos, el archivo `.czrc` debería estar configurado correctamente en tu sistema.
+
+
 ## Eliminar el símbolo "$" del prompt de la terminal
 
 Si deseas eliminar el símbolo "$" del prompt de la terminal Git Bash, puedes seguir estos pasos:
