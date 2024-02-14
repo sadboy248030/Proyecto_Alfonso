@@ -1,10 +1,10 @@
-# Guía de Instalación de Commitizen y Configuración
+### Guía de Instalación y Configuración de Commitizen
 
-Este es un breve tutorial sobre cómo instalar y configurar Commitizen en tu sistema.
+Esta es una breve guía sobre cómo instalar y configurar Commitizen en tu sistema.
 
 ## Instalación de Commitizen
 
-Commitizen es una herramienta para estandarizar los mensajes de confirmación. Para instalarlo, sigue estos pasos:
+Commitizen es una herramienta para estandarizar los mensajes de confirmación. Sigue estos pasos para instalarlo:
 
 1. Abre tu terminal (Git Bash, Command Prompt, Terminal, etc.).
 
@@ -14,6 +14,29 @@ Commitizen es una herramienta para estandarizar los mensajes de confirmación. P
     npm install -g commitizen
     ```
 
+## Configuración de Commitizen en Español
+
+Para configurar Commitizen para que utilice el idioma español cuando ejecutes `git cz`, sigue estos pasos:
+
+1. Asegúrate de tener instalado el adaptador convencional en español. Puedes instalarlo ejecutando el siguiente comando:
+
+    ```bash
+    npm install -g cz-conventional-changelog-es
+    ```
+
+2. Luego, crea un archivo llamado `.czrc` en el directorio raíz de tu proyecto o en tu directorio de usuario.
+
+3. Dentro de `.czrc`, agrega la siguiente línea para especificar el adaptador convencional en español:
+
+    ```json
+    {
+      "path": "cz-conventional-changelog-es"
+    }
+    ```
+
+   Esto le dice a Commitizen que utilice el adaptador convencional de Commitizen en español para generar mensajes de confirmación.
+
+Con estos pasos, deberías tener Commitizen instalado y configurado correctamente en tu sistema para utilizarlo en español cuando ejecutes `git cz`.
 ## Agregar la ruta de instalación de npm a la variable de entorno PATH
 
 Es posible que necesites agregar la ruta de instalación de npm a la variable de entorno PATH para que Git Bash pueda encontrar los comandos instalados globalmente. Sigue estos pasos:
