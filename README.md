@@ -37,7 +37,7 @@ Es posible que necesites agregar la ruta de instalación de npm a la variable de
 
 ## Configurar el archivo .czrc
 
-El archivo .czrc se utiliza para personalizar el adaptador convencional de Commitizen. Sigue estos pasos para configurarlo:
+El archivo `.czrc` se utiliza para personalizar el adaptador convencional de Commitizen. Sigue estos pasos para configurarlo:
 
 1. Crea un archivo llamado `.czrc` en el directorio raíz de tu proyecto o en tu directorio de usuario.
 
@@ -49,7 +49,11 @@ El archivo .czrc se utiliza para personalizar el adaptador convencional de Commi
     }
     ```
 
-    Esto le dice a Commitizen que utilice el adaptador convencional de Commitizen para generar mensajes de confirmación
+   Esto le dice a Commitizen que utilice el adaptador convencional de Commitizen para generar mensajes de confirmación.
+
+   Si estás utilizando Node.js instalado desde el sitio web oficial o mediante el administrador de versiones Node Version Manager (NVM) en Windows, la ruta donde se guarda normalmente Node.js y npm es `C:\Program Files\nodejs\node_modules\npm`.
+
+Con estos pasos, el archivo `.czrc` debería estar configurado correctamente en tu sistema.
 ## Eliminar el símbolo "$" del prompt de la terminal
 
 Si deseas eliminar el símbolo "$" del prompt de la terminal Git Bash, puedes seguir estos pasos:
