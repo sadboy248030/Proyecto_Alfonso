@@ -1,5 +1,5 @@
 ### Guía de Instalación y Configuración de Commitizen
-
+Creado por: Alfonso.
 Esta es una breve guia sobre cómo instalar y configurar Commitizen en tu sistema.
 
 ## Instalación de Commitizen
