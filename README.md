@@ -39,7 +39,7 @@ Para configurar Commitizen para que utilice el idioma español cuando ejecutes `
 1. Asegúrate de tener instalado el adaptador convencional en español. Puedes instalarlo ejecutando el siguiente comando:
 
     ```bash
-    npm install -g cz-conventional-changelog-es
+   npm install -g commitizen
     ```
 
 2. Luego, crea un archivo llamado `.czrc` en el directorio raíz de tu proyecto o en tu directorio de usuario.
@@ -47,9 +47,19 @@ Para configurar Commitizen para que utilice el idioma español cuando ejecutes `
 3. Dentro de `.czrc`, agrega la siguiente línea para especificar el adaptador convencional en español:
 
     ```json
-    {
-      "path": "cz-conventional-changelog-es"
-    }
+   {
+   "path": "cz-conventional-changelog",
+   "messages": {
+   "type": "Selecciona el tipo de cambio que estás confirmando:",
+   "scope": "\nIndica el alcance de este cambio (opcional):",
+   "customScope": "Indica el alcance de este cambio:",
+   "subject": "Escribe una descripción corta y descriptiva del cambio:\n",
+   "body": "Escribe una descripción más detallada del cambio (opcional). Usa '|' para una nueva línea:\n",
+   "breaking": "Lista de cambios que rompen la compatibilidad (opcional):\n",
+   "footer": "Lista de issues cerradas por este cambio (opcional). E.g.: #31, #34:\n",
+   "confirmCommit": "¿Confirmar el mensaje de confirmación?"
+   }
+   }
     ```
 
    Esto le dice a Commitizen que utilice el adaptador convencional de Commitizen en español para generar mensajes de confirmación.
