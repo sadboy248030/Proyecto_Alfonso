@@ -1,5 +1,5 @@
 # Proyecto Java  Cine
-
+Hola
 Este proyecto es una página web dedicada al mundo del cine. Proporciona información sobre películas, salas de cine y más.
 
 ## Secciones
