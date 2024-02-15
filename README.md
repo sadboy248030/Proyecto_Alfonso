@@ -26,8 +26,8 @@ Este proyecto utiliza HTML, CSS y posiblemente JavaScript para crear una experie
 
 ## Colaboradores
 
-- [Nombre del Colaborador 1](enlace-al-perfil-de-github)
-- [Nombre del Colaborador 2](enlace-al-perfil-de-github)
+- [Nombre Alfonso](enlace-al-perfil-de-github)
+- [Nombre 2- JESUS PARA PULL REQUEST](enlace-al-perfil-de-github)
 
 ## Contribuir
 
