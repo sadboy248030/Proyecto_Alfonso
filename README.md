@@ -29,10 +29,6 @@ Este proyecto utiliza HTML, CSS y posiblemente JavaScript para crear una experie
 - [Nombre Alfonso](enlace-al-perfil-de-github)
 - [Nombre 2- JESUS PARA PULL REQUEST](enlace-al-perfil-de-github)
 
-## Contribuir
-
-¡Siéntete libre de contribuir al proyecto! Puedes hacerlo creando pull requests para corregir errores, agregar nuevas características o mejorar la experiencia del usuario.
-
 ## Licencia
 
 Este proyecto está bajo la Licencia [Alfonso].
