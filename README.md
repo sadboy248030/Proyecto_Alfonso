@@ -35,5 +35,5 @@ Este proyecto utiliza HTML, CSS y posiblemente JavaScript para crear una experie
 
 ## Licencia
 
-Este proyecto está bajo la Licencia [Nombre de la Licencia] (enlace-a-la-licencia).
+Este proyecto está bajo la Licencia [Alfonso].
 
