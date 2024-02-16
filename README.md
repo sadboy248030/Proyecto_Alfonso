@@ -47,7 +47,20 @@ Si los permisos no están configurados correctamente, puedes cambiarlos utilizan
 ```bash
   chmod +w .git/COMMIT_EDITMSG
 ```
+## Instalación global de git-cz
 
+El comando `npm install -g git-cz` se utiliza para instalar globalmente la herramienta `git-cz` a través de Node Package Manager (npm). Aquí se explica qué hace cada parte del comando:
+
+- `npm`: Es el administrador de paquetes de Node.js, utilizado para instalar, actualizar y administrar paquetes de software de Node.js.
+- `install`: Es el comando de npm que se utiliza para instalar paquetes.
+- `-g`: Es una bandera que indica que el paquete se instalará de forma global en el sistema, lo que significa que estará disponible en todos los proyectos y en todas las ubicaciones del sistema.
+- `git-cz`: Es el nombre del paquete que se va a instalar, en este caso, se refiere a la herramienta de Commitizen para generar mensajes de confirmación siguiendo convenciones específicas.
+
+Puedes ejecutar este comando en tu terminal para instalar `git-cz` globalmente:
+
+```bash
+   npm install -g git-cz
+```
 Forzar la Instalación de Git CZ
 Si encuentras problemas al instalar Git CZ, como errores de existencia de archivos, puedes intentar forzar la instalación utilizando el comando npm install -g git-cz --force:
 ```bash
