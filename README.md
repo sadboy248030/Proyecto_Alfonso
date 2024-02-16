@@ -80,16 +80,16 @@ Esta guía te mostrará cómo configurar Git Bash en IntelliJ IDEA para que pued
 1. Encuentra la ruta de instalación de npm. Por lo general, está dentro del directorio de instalación de Node.js. Por ejemplo, `C:\Program Files\nodejs\node_modules\npm`.
 
 2. Abre la configuración de variables de entorno en tu sistema:
-   - Haz clic derecho en "Este equipo" o "Mi PC" y selecciona "Propiedades".
-   - Haz clic en "Configuración avanzada del sistema".
-   - Haz clic en el botón "Variables de entorno".
+    - Haz clic derecho en "Este equipo" o "Mi PC" y selecciona "Propiedades".
+    - Haz clic en "Configuración avanzada del sistema".
+    - Haz clic en el botón "Variables de entorno".
 
 3. En la sección "Variables del sistema" (o "Variables de usuario"), encuentra la variable de entorno llamada "Path" o "PATH" y selecciónala.
 
 4. Haz clic en el botón "Editar" para modificar la variable de entorno PATH.
 
 5. Haz clic en "Nuevo" y pega la ruta de instalación de npm que encontraste anteriormente. Te saldra name:`npm`
-value:`C:\Program Files\nodejs\node_modules\npm`.
+   value:`C:\Program Files\nodejs\node_modules\npm`.
 
 
 
