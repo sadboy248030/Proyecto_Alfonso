@@ -32,6 +32,49 @@ El archivo `.czrc` se utiliza para personalizar el adaptador convencional de Com
    Si estás utilizando Node.js instalado desde el sitio web oficial o mediante el administrador de versiones Node Version Manager (NVM) en Windows, la ruta donde se guarda normalmente Node.js y npm es `C:\Program Files\nodejs\node_modules\npm`.
 
 Con estos pasos, el archivo `.czrc` debería estar configurado correctamente en tu sistema.
+## Solución de Problemas con Git CZ
+
+Si encuentras problemas al utilizar Git CZ, como la imposibilidad de realizar commits o problemas con los permisos del archivo COMMIT_EDITMSG, aquí hay algunos pasos que puedes seguir para resolverlos:
+
+### Verificar Permisos del Archivo COMMIT_EDITMSG
+
+Asegúrate de tener permisos de escritura en el archivo COMMIT_EDITMSG dentro del directorio `.git`. Puedes verificar los permisos utilizando el comando `ls -l` en la terminal Git Bash:
+
+```bash
+   ls -l .git //ls -l
+```
+Si los permisos no están configurados correctamente, puedes cambiarlos utilizando el comando chmod. Por ejemplo, para otorgar permisos de escritura, puedes ejecutar:
+```bash
+  chmod +w .git/COMMIT_EDITMSG
+```
+
+Forzar la Instalación de Git CZ
+Si encuentras problemas al instalar Git CZ, como errores de existencia de archivos, puedes intentar forzar la instalación utilizando el comando npm install -g git-cz --force:
+```bash
+  npm install -g git-cz --force
+```
+
+Verificar la Versión de Git CZ
+Después de la instalación, verifica la versión de Git CZ para asegurarte de que se haya instalado correctamente:
+```bash
+ git cz --version
+```
+
+Actualizar desde el Repositorio Remoto
+Antes de realizar un push de tus cambios, asegúrate de obtener las últimas actualizaciones desde el repositorio remoto utilizando el comando git pull:
+
+```bash
+git pull
+```
+
+Enviar tus Cambios al Repositorio Remoto
+Una vez que hayas realizado tus cambios y resuelto cualquier conflicto que pueda surgir al hacer pull, puedes enviar tus cambios al repositorio remoto utilizando el comando git push:
+```bash
+git push
+```
+
+
+
 ## Configuración de Commitizen en Español
 
 Para configurar Commitizen para que utilice el idioma español cuando ejecutes `git cz`, sigue estos pasos:
@@ -72,7 +115,7 @@ Esta guía te mostrará cómo configurar Git Bash en IntelliJ IDEA para que pued
 ### Paso 1: Abre la Configuración
 
 1. Abre IntelliJ IDEA.
-
+ 
 2. Haz clic en "File" en la barra de menú y selecciona "Settings" (o "Preferences" en macOS).
 
 ### Paso 2: Navega a la Configuración de Terminal
