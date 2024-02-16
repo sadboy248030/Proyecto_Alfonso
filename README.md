@@ -1,6 +1,6 @@
-# Proyecto Java  Cine
+# Proyecto Java Cine
 Hola:
-Este proyecto es una trabajo   dedicado al mundo del cine en java . Proporciona información sobre películas, salas de cine y más.
+Este proyecto es un trabajo dedicado al mundo del cine en java. Proporciona información sobre películas, salas de cine y más.
 
 ## Secciones
 
@@ -31,5 +31,5 @@ Este proyecto utiliza HTML, CSS y posiblemente JavaScript para crear una experie
 
 ## Licencia
 
-Este proyecto está bajo la Licencia [Alfonso].
+Este proyecto está bajo la Licencia[Alfonso].
 
